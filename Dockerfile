@@ -1,6 +1,8 @@
 # fblgit/docker-dbninja
 FROM ubuntu:trusty
 
+MAINTAINER fblgit@github
+
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -qy mysql-client-5.6 apache2 libapache2-mod-php5 php5-mysql wget
 ADD start.sh /data/
